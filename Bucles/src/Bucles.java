@@ -16,11 +16,11 @@ public class Bucles {
 		}while(cont < 10);
 		
 		for(int i = 0; i < 10; i++){
-			System.out.println("Dentro del For: "+i);
+			System.out.println("Dentro del For incremental: "+i);
 		}
 		
 		for(int i = 10; i > -1; i--){
-			System.out.println("Dentro del For: "+i);
+			System.out.println("Dentro del For decremental: "+i);
 		}
 	}
 

@@ -3,9 +3,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import javax.xml.ws.Response;
-
-
 public class BDManagement {
 
 	private final static String driver = "com.mysql.jdbc.Driver";

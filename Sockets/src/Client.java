@@ -11,6 +11,14 @@ public class Client {
 			socket = new Socket("localhost", 9999); //localhost = dirección IP
 			ois = new ObjectInputStream(socket.getInputStream());
 			System.out.println((String)ois.readObject());
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		this.closeSocket();
+	}
+
+	public void closeSocket(){
+		try{
 			ois.close();
 			socket.close();
 		}catch(Exception e){

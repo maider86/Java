@@ -14,6 +14,14 @@ public class Server {
 			socket = serverSocket.accept();
 			oos = new ObjectOutputStream(socket.getOutputStream());
 			oos.writeObject("¡Bienvenido cliente!");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		this.closeSocket();
+	}
+
+	public void closeSocket(){
+		try{
 			oos.close();
 			socket.close();
 			serverSocket.close();
